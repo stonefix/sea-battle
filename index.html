@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sea battle</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/battle-ship-game.js"></script>
+</head>
+<body class="show-main-menu">
+	<div id="game-window">
+		<div id="main-menu">
+			<form id="start-game-form" class="menu-wrap">
+				Enter the name:
+				<input type="text" id="player-name-input">
+				<div class="input-info" id="player-name-input-info">
+					The player's name can only contain letters, numbers, periods, and spaces.
+				</div>
+				<input type="button" value="Play" class="start-game-btn primary">
+
+			</form>
+		</div>
+		
+		<div id="game-wrap">
+			<div class="message-end-game">
+				<div class="message-box">
+					<div id="game-win">
+						<h1>Victory!</h1>
+						<p>The opponent has been defeated</p>
+					</div>
+					<div id="game-losing">
+						<h1>Defeat</h1>
+						<p>Your fleet has been defeated</p>
+					</div>					
+					
+					<input type="button" value="Again!" class="primary start-game-btn">
+					<input type="button" value="Exit" class="exit-game-btn">
+				</div>
+			</div>
+
+			<div class="game-header">
+				<div class="header-left-btn">
+					<input type="button" value="Back" class="exit-game-btn arrow-left">
+				</div>
+
+				<div  id="logo">
+					<h1 class="text-center">Sea battle</h1>
+				</div>
+
+				<div id="score">
+					<div id="score-player-name">Your name</div>
+					<div id="score-game">0 : 0</div>
+					<div id="score-computer-name">Computer</div>
+				</div>
+			</div>
+			
+			<div class="game-wrap">
+				<div id="game-status">Your move</div>
+				
+				<div class="battle-field">
+					<table id="player-field"></table>
+					<p class="text-center">Your field</p>
+				</div>
+
+				<div class="battle-field">
+					<table id="computer-field"></table>
+					<p class="text-center">Computer</p>
+				</div>
+
+			</div>
+			<input type="button" value="New game" class="new-game-btn">
+
+		</div>
+
+
+	</div>
+
+</body>
+</html>
